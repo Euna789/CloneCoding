@@ -1,0 +1,17 @@
+body{
+    background-color: #ecf0f1;
+}
+
+h1{
+    color: #3481fa;
+    transition: color 0.5s ease-in-out;
+    /*자연스럽게 색 변화*/
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.clicked{
+    color: #7921ff;
+}
