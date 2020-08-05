@@ -2,23 +2,17 @@ body{
     background-color: #2c3e50;
 }
 
-h1{
+*{
     color: white;
-}
-
-li{
-    color:white;
 }
 
 .form,
 .greeting{
     display: none;
-    color:white;
 }
 
 .showing{
     display: block;
-    color:white;
 
 }
 
