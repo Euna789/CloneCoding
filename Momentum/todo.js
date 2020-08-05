@@ -40,7 +40,7 @@ function paintToDo(text){
     const li=document.createElement("li");
     const delBtn=document.createElement("button");
     const span=document.createElement("span");
-    delBtn.innerText="삭제";
+    delBtn.innerText="❌";
     delBtn.addEventListener("click",deleteToDo);
     span.innerText=text;
     li.id=newId;

@@ -1,9 +1,31 @@
+*{
+    color: white;
+    text-align: center;
+    font-family: "Georgia";
+}
 body{
     background-color: #2c3e50;
 }
 
-*{
+h1{
+    font-size:100px;
+}
+
+input{
+    border: none;
+    border-bottom: solid 2px white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size:20px;
+}
+
+input::placeholder {
     color: white;
+    font-style: italic;
+  }
+
+button{
+    background-color:rgba(0,0,0,0);
+    border:none;
 }
 
 .form,
@@ -13,7 +35,7 @@ body{
 
 .showing{
     display: block;
-
+    font-size: 30px;
 }
 
 .bgImage{
