@@ -19,7 +19,7 @@ body{
 }
 
 .controls{
-    margin-top:80px;
+    margin-top:40px;
     display:flex;
     flex-direction: column; /*버튼 class와 색상 class가 세로로 배열*/
     align-items:center;
