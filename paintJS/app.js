@@ -2,15 +2,24 @@ const canvas=document.getElementById("jsCanvas");
 const ctx=canvas.getContext("2d");
 //canvas라는 html요소를 이용, canvas의 context를 통해 원하는 색 등으로 바꾼다
 
+const colors=document.getElementsByClassName("jsColor");
+const range=document.getElementById("jsRange");
+const mode=document.getElementById("jsMode");
+
+const INITIAL_COLOR="#2c2c2c";
+const CANVAS_SIZE=500;
+
 //css와 별개로 pixel을 다룰 수 있는 element로 만드는 것이므로 
 //크기를 지정해줘야함
-canvas.width=500;
-canvas.height=500;
+canvas.width=CANVAS_SIZE;
+canvas.height=CANVAS_SIZE;
 
-ctx.strokeStyle="#2c2c2c"; //선 색 초기화
+ctx.strokeStyle=INITIAL_COLOR; //선 색 초기화
 ctx.lineWidth=2.5; //선 굵기 초기화
+ctx.fillStyle=INITIAL_COLOR;
 
 let painting= false;
+let filling=false;
 
 function stopPainting(){
     painting=false;
@@ -38,17 +47,56 @@ function onMouseMove(event){
     }
 }
 
-//마우스 클릭시 그림이 그려짐
-function onMouseDown(event){ 
-    painting=true;
+function handleColorClick(event){
+    const color=event.target.style.backgroundColor;
+    ctx.strokeStyle=color;
+    ctx.fillStyle=color;
+    //override, strokeStyle을 target에 해당하는 색으로 바꿈
 }
 
+function handleRangeChange(event){
+    const size=event.target.value;
+    ctx.lineWidth=size;
+    //ctx.lineWidth를 override
+}
+
+function handleModeClick(){ //don't care about event
+    if (filling===true){
+        filling=false;
+        mode.innerText="Fill";
+    }
+    else{
+        filling=true;
+        mode.innerText="Paint";
+    }
+    
+}
+
+function handleCanvasClick(){
+    if (filling){
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+    }
+}
 
 if (canvas){
     canvas.addEventListener("mousemove",onMouseMove);
     canvas.addEventListener("mousedown", startPainting);
     canvas.addEventListener("mouseup",stopPainting);
     canvas.addEventListener("mouseleave",stopPainting);
+    canvas.addEventListener("click",handleCanvasClick);
     
 }
 
+Array.from(colors).forEach(color=> //파라미터
+    color.addEventListener("click",handleColorClick)
+    );
+//Array.from은 object로부터 array를 만든다
+
+if(range){
+    range.addEventListener("input",handleRangeChange);
+    //range 리스너는 input에 반응
+}
+
+if(mode){
+    mode.addEventListener("click",handleModeClick);
+}
