@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/CloneCoding/tree/master/movie_app/static/css/main.459df648.chunk.css",
-    "main.js": "/CloneCoding/tree/master/movie_app/static/js/main.bdc8c666.chunk.js",
-    "main.js.map": "/CloneCoding/tree/master/movie_app/static/js/main.bdc8c666.chunk.js.map",
-    "runtime-main.js": "/CloneCoding/tree/master/movie_app/static/js/runtime-main.5b240ef8.js",
-    "runtime-main.js.map": "/CloneCoding/tree/master/movie_app/static/js/runtime-main.5b240ef8.js.map",
-    "static/js/2.03729dac.chunk.js": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js",
-    "static/js/2.03729dac.chunk.js.map": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js.map",
-    "index.html": "/CloneCoding/tree/master/movie_app/index.html",
-    "precache-manifest.5247ae60428703069aa8b5c7136061ec.js": "/CloneCoding/tree/master/movie_app/precache-manifest.5247ae60428703069aa8b5c7136061ec.js",
-    "service-worker.js": "/CloneCoding/tree/master/movie_app/service-worker.js",
-    "static/css/main.459df648.chunk.css.map": "/CloneCoding/tree/master/movie_app/static/css/main.459df648.chunk.css.map",
-    "static/js/2.03729dac.chunk.js.LICENSE.txt": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js.LICENSE.txt"
+    "main.css": "/CloneCoding/static/css/main.459df648.chunk.css",
+    "main.js": "/CloneCoding/static/js/main.bdc8c666.chunk.js",
+    "main.js.map": "/CloneCoding/static/js/main.bdc8c666.chunk.js.map",
+    "runtime-main.js": "/CloneCoding/static/js/runtime-main.9cbddb10.js",
+    "runtime-main.js.map": "/CloneCoding/static/js/runtime-main.9cbddb10.js.map",
+    "static/js/2.03729dac.chunk.js": "/CloneCoding/static/js/2.03729dac.chunk.js",
+    "static/js/2.03729dac.chunk.js.map": "/CloneCoding/static/js/2.03729dac.chunk.js.map",
+    "index.html": "/CloneCoding/index.html",
+    "precache-manifest.023c445708edf9409bf0a296df34f5e8.js": "/CloneCoding/precache-manifest.023c445708edf9409bf0a296df34f5e8.js",
+    "service-worker.js": "/CloneCoding/service-worker.js",
+    "static/css/main.459df648.chunk.css.map": "/CloneCoding/static/css/main.459df648.chunk.css.map",
+    "static/js/2.03729dac.chunk.js.LICENSE.txt": "/CloneCoding/static/js/2.03729dac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b240ef8.js",
+    "static/js/runtime-main.9cbddb10.js",
     "static/js/2.03729dac.chunk.js",
     "static/css/main.459df648.chunk.css",
     "static/js/main.bdc8c666.chunk.js"
