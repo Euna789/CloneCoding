@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "//Euna789.github.io/CloneCoding/static/css/main.459df648.chunk.css",
-    "main.js": "//Euna789.github.io/CloneCoding/static/js/main.bdc8c666.chunk.js",
-    "main.js.map": "//Euna789.github.io/CloneCoding/static/js/main.bdc8c666.chunk.js.map",
-    "runtime-main.js": "//Euna789.github.io/CloneCoding/static/js/runtime-main.ba238dbd.js",
-    "runtime-main.js.map": "//Euna789.github.io/CloneCoding/static/js/runtime-main.ba238dbd.js.map",
-    "static/js/2.03729dac.chunk.js": "//Euna789.github.io/CloneCoding/static/js/2.03729dac.chunk.js",
-    "static/js/2.03729dac.chunk.js.map": "//Euna789.github.io/CloneCoding/static/js/2.03729dac.chunk.js.map",
-    "index.html": "//Euna789.github.io/CloneCoding/index.html",
-    "precache-manifest.507f712b660add3fe2c814bef03beaa1.js": "//Euna789.github.io/CloneCoding/precache-manifest.507f712b660add3fe2c814bef03beaa1.js",
-    "service-worker.js": "//Euna789.github.io/CloneCoding/service-worker.js",
-    "static/css/main.459df648.chunk.css.map": "//Euna789.github.io/CloneCoding/static/css/main.459df648.chunk.css.map",
-    "static/js/2.03729dac.chunk.js.LICENSE.txt": "//Euna789.github.io/CloneCoding/static/js/2.03729dac.chunk.js.LICENSE.txt"
+    "main.css": "/CloneCoding/tree/master/movie_app/static/css/main.459df648.chunk.css",
+    "main.js": "/CloneCoding/tree/master/movie_app/static/js/main.bdc8c666.chunk.js",
+    "main.js.map": "/CloneCoding/tree/master/movie_app/static/js/main.bdc8c666.chunk.js.map",
+    "runtime-main.js": "/CloneCoding/tree/master/movie_app/static/js/runtime-main.5b240ef8.js",
+    "runtime-main.js.map": "/CloneCoding/tree/master/movie_app/static/js/runtime-main.5b240ef8.js.map",
+    "static/js/2.03729dac.chunk.js": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js",
+    "static/js/2.03729dac.chunk.js.map": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js.map",
+    "index.html": "/CloneCoding/tree/master/movie_app/index.html",
+    "precache-manifest.5247ae60428703069aa8b5c7136061ec.js": "/CloneCoding/tree/master/movie_app/precache-manifest.5247ae60428703069aa8b5c7136061ec.js",
+    "service-worker.js": "/CloneCoding/tree/master/movie_app/service-worker.js",
+    "static/css/main.459df648.chunk.css.map": "/CloneCoding/tree/master/movie_app/static/css/main.459df648.chunk.css.map",
+    "static/js/2.03729dac.chunk.js.LICENSE.txt": "/CloneCoding/tree/master/movie_app/static/js/2.03729dac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba238dbd.js",
+    "static/js/runtime-main.5b240ef8.js",
     "static/js/2.03729dac.chunk.js",
     "static/css/main.459df648.chunk.css",
     "static/js/main.bdc8c666.chunk.js"
