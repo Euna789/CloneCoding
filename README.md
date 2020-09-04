@@ -14,3 +14,5 @@ https://euna789.github.io/CloneCoding/paintJS/index.html
 
 ## #3 Movie App
 # ReactJS로 영화 웹서비스 만들기
+
+![movie_app](./imgs/movie_app.png)
