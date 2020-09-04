@@ -1,42 +1,59 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+import axios from "axios";
+import Movie from "./movie";
+import "./App.css";
 
 class App extends React.Component{
   state={
-    count:0
+    isLoading : true,
+    movies : []
   };
 
-  plus = () => {
-    this.setState(current => ({count : current.count + 1})); //this.state.count 대신에 이렇게 쓰는게 좋다!
-  };
-  minus = () => {
-    this.setState(current => ({count : current.count - 1}));
+  getMovies = async () =>{
+    //await: 비동기, 너는 이걸 기다려야해
+    const {data: {data: {movies}}} = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
+    this.setState({movies: movies, isLoading: false})
+    //movies:from state , movies: 내가 fetch한것. javascript는 movies하나만 써도 알아먹음
   }
-  
   componentDidMount(){
-    console.log("component rendered");
-  }
+    this.getMovies();
 
-  componentDidUpdate(){
-    console.log("component updated");
-  }
-
-  componentWillUpdate(){
-    console.log("goodbye");
+    // setTimeout( () => {
+    //   this.setState({ isLoading : false })
+    // }, 6000);
+    //5초후 로딩되면 ready로 바꾸는 예시
   }
 
   render(){
-    console.log("Im rendering");
+    //state에서 가져오는법
+    // css를 위한 class는 react가 헷갈리지 않도록 className으로 써줘야함
+    const {isLoading, movies} = this.state;
     return (
-      <div>
-        <h1>The number is :{this.state.count}</h1>
-        <button onClick={this.plus}>Plus</button>
-        <button onClick={this.minus}>Minus</button>
-      </div>
-    )
+      <section className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader_text">Loading...</span>
+          </div>
+          ) : (            
+          <div className="movies">
+          {movies.map( movie =>( 
+          //return 생략
+
+            <Movie 
+              key={movie.id}
+              id={movie.id} 
+              title= {movie.title}
+              year={movie.year} 
+              summary={movie.summary} 
+              poster={movie.medium_cover_image}
+              genres={movie.genres}
+            />
+        ))}
+        </div>
+        )} 
+      </section>
+    );
   }
 }
 
 export default App;
-
-//react가 virtual DOM을 만든다
