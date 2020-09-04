@@ -59,6 +59,7 @@ Food.propTypes = {name:PropTypes.string.isRequired}
   <li key={index}> {genre} </li> 
   )}
 </ul>
+```  
 
 ## deploying to Github Pages
 - cmd ```npm i gh-pages```
